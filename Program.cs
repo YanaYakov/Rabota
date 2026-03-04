@@ -17,19 +17,24 @@
                     result = Calculatet.GetSum(firstNumber, secondNumber);
                 }
                 
-                if(actin == "-")
+                else if(actin == "-")
                 {
                     result = Calculatet.GetDiff(firstNumber, secondNumber);
                 }
-                
-                if(actin == "/") 
+
+                else if (actin == "/") 
                 {
                     result = Calculatet.GetDiv(firstNumber, secondNumber);
                 }
-                
-                if (actin == "*")
+
+                else if (actin == "*")
                 {
                     result = Calculatet.GetMultipli(firstNumber, secondNumber);
+                }
+
+                else
+                {
+                    Console.WriteLine("Please enter valid action");
                 }
 
                 Console.WriteLine(result);
