@@ -2,26 +2,35 @@
 {
     public static class Calculatet
     {
-        public static int GetSum(int firstNumber, int secondNumber)
+        public static double GetSum(double firstNumber, double secondNumber)
         {
-            int sumResulr = firstNumber + secondNumber;
+            double result = firstNumber + secondNumber;
 
-            return sumResulr;
+            return result;
         }
 
-        public static int GetDiff(int firstNumber, int secondNumber)
+        public static double GetDiff(double firstNumber, double secondNumber)
         {
-            int diffResulr = firstNumber - secondNumber;
+            double result = firstNumber - secondNumber;
 
-            return diffResulr;
+            return result;
 
         }
 
-        public static int GetDiv(int firstNumber, int secondNumber) 
+        public static double GetDiv(double firstNumber, double secondNumber) 
         { 
-            int divResult = firstNumber / secondNumber;
+            
+            double result = (double)firstNumber / (double)secondNumber;
 
-            return divResult;
+            return result;
         }
+
+        public static double GetMultipli(double firstNumber, double secondNumber)
+        {
+            double result = firstNumber * secondNumber;
+
+            return result;
+        }
+
     }
 }
