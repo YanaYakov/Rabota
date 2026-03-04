@@ -17,16 +17,25 @@
                     int result = Calculatet.GetSum(firstNumber, secondNumber);
                     Console.WriteLine(result);
                 }
+                
                 if(actin == "-")
                 {
-                    int diffResult = Calculatet.GetDiff(firstNumber, secondNumber);
-                    Console.WriteLine(diffResult);
+                    int result = Calculatet.GetDiff(firstNumber, secondNumber);
+                    Console.WriteLine(result);
                 }
+                
                 if(actin == "/") 
                 {
-                    int divResult = Calculatet.GetDiv(firstNumber, secondNumber);
-                    Console.WriteLine(divResult);
+                    double result = Calculatet.GetDiv(firstNumber, secondNumber);
+                    Console.WriteLine(result.ToString("0.000"));
                 }
+                
+                if (actin == "*")
+                {
+                    int result = Calculatet.GetMultipli(firstNumber, secondNumber);
+                    Console.WriteLine(result);
+                }
+
             }
         }
     }
