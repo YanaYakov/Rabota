@@ -12,24 +12,28 @@
                 double secondNumber = Double.Parse(Console.ReadLine());
                 double result = 0;
                 
-                if(actin == "+")
+                
+                switch (actin)
                 {
+                    case "+":
                     result = Calculatet.GetSum(firstNumber, secondNumber);
-                }
-                
-                if(actin == "-")
-                {
+                        break;
+
+                    case "-":
                     result = Calculatet.GetDiff(firstNumber, secondNumber);
-                }
-                
-                if(actin == "/") 
-                {
+                        break;
+
+                    case "/": 
                     result = Calculatet.GetDiv(firstNumber, secondNumber);
-                }
-                
-                if (actin == "*")
-                {
+                        break;
+
+                    case "*":
                     result = Calculatet.GetMultipli(firstNumber, secondNumber);
+                        break;
+
+                    default:
+                        Console.WriteLine("Try again. Non correct actin");
+                        break;
                 }
 
                 Console.WriteLine(result);
