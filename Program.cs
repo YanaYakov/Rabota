@@ -6,36 +6,33 @@
         {
             while(true)
             {
-                int firstNumber = Int32.Parse(Console.ReadLine());
+                double firstNumber =    Double.Parse(Console.ReadLine());
                 UserInterface.ShowActionMessege();
                 string actin = Console.ReadLine();
-                int secondNumber = Int32.Parse(Console.ReadLine());
-
+                double secondNumber = Double.Parse(Console.ReadLine());
+                double result = 0;
                 
                 if(actin == "+")
                 {
-                    int result = Calculatet.GetSum(firstNumber, secondNumber);
-                    Console.WriteLine(result);
+                    result = Calculatet.GetSum(firstNumber, secondNumber);
                 }
                 
                 if(actin == "-")
                 {
-                    int result = Calculatet.GetDiff(firstNumber, secondNumber);
-                    Console.WriteLine(result);
+                    result = Calculatet.GetDiff(firstNumber, secondNumber);
                 }
                 
                 if(actin == "/") 
                 {
-                    double result = Calculatet.GetDiv(firstNumber, secondNumber);
-                    Console.WriteLine(result.ToString("0.000"));
+                    result = Calculatet.GetDiv(firstNumber, secondNumber);
                 }
                 
                 if (actin == "*")
                 {
-                    int result = Calculatet.GetMultipli(firstNumber, secondNumber);
-                    Console.WriteLine(result);
+                    result = Calculatet.GetMultipli(firstNumber, secondNumber);
                 }
 
+                Console.WriteLine(result);
             }
         }
     }

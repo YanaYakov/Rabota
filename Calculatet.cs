@@ -2,22 +2,22 @@
 {
     public static class Calculatet
     {
-        public static int GetSum(int firstNumber, int secondNumber)
+        public static double GetSum(double firstNumber, double secondNumber)
         {
-            int result = firstNumber + secondNumber;
+            double result = firstNumber + secondNumber;
 
             return result;
         }
 
-        public static int GetDiff(int firstNumber, int secondNumber)
+        public static double GetDiff(double firstNumber, double secondNumber)
         {
-            int result = firstNumber - secondNumber;
+            double result = firstNumber - secondNumber;
 
             return result;
 
         }
 
-        public static double GetDiv(int firstNumber, int secondNumber) 
+        public static double GetDiv(double firstNumber, double secondNumber) 
         { 
             
             double result = (double)firstNumber / (double)secondNumber;
@@ -25,9 +25,9 @@
             return result;
         }
 
-        public static int GetMultipli(int firstNumber, int secondNumber)
+        public static double GetMultipli(double firstNumber, double secondNumber)
         {
-            int result = firstNumber * secondNumber;
+            double result = firstNumber * secondNumber;
 
             return result;
         }
