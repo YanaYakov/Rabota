@@ -7,28 +7,34 @@
             string answer;
             do
             {
-                double firstNumber =    Double.Parse(Console.ReadLine());
                 UserInterface.ShowActionMessege();
-                string actin = Console.ReadLine();
-                double secondNumber = Double.Parse(Console.ReadLine());
+                string expression = Console.ReadLine().Trim();
+                
+                int index = expression.IndexOfAny(new char[] { '+', '-', '/', '*' });
+                char actin = expression[index];
+
+                string[] numers = expression.Split(actin);
+
+                double firstNumber = Double.Parse(numers[0].Trim());
+                double secondNumber = Double.Parse(numers[1].Trim());
                 double result = 0;
                 
                 
                 switch (actin)
                 {
-                    case "+":
+                    case '+':
                     result = Calculatet.GetSum(firstNumber, secondNumber);
                         break;
 
-                    case "-":
+                    case '-':
                     result = Calculatet.GetDiff(firstNumber, secondNumber);
                         break;
 
-                    case "/": 
+                    case '/': 
                     result = Calculatet.GetDiv(firstNumber, secondNumber);
                         break;
 
-                    case "*":
+                    case '*':
                     result = Calculatet.GetMultipli(firstNumber, secondNumber);
                         break;
 

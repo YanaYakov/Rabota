@@ -4,7 +4,7 @@
     {
         public static void ShowActionMessege()
         {
-            Console.WriteLine("Please choise math actin.");
+            Console.WriteLine("Please choise math expression.");
             Console.WriteLine("Avalible: +, -, /, *");
         }
     }
