@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            while(true)
+            string answer;
+            do
             {
                 double firstNumber =    Double.Parse(Console.ReadLine());
                 UserInterface.ShowActionMessege();
@@ -37,7 +38,11 @@
                 }
 
                 Console.WriteLine(result);
+                Console.WriteLine("Exit the program? Press 1 for exit, 2 for repeat calculate");
+                answer = Console.ReadLine();
+
             }
+            while (answer != "1") ;
         }
     }
 }
